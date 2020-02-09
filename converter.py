@@ -13,6 +13,9 @@ def getLongest(strArr):
 			longest = temp
 	return longest
 
+def do_something_funny():
+	return "I don't know what I did but it's bad"
+
 def romanNum(num):
 	num = int(num)
 	nums = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
@@ -87,7 +90,7 @@ def convertLine(strs, output, dic1, puncs):
 			output.write(" ")
 
 def main():
-	cgitb.engable()
+	cgitb.enable()
 	form = cgi.FieldStorage()
 	#str = input("File to generate: ")
 	file = form['upload']
